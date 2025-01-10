@@ -22,6 +22,10 @@ body {
     margin-bottom: 10px;
     color: #ff0000;
   }
+  .widget-title:hover {
+    background-color: #ef8787
+
+  }
   
   .widget-button {
     background-color: #007BFF;
