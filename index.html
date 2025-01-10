@@ -11,27 +11,12 @@
 <body>
   <div id="widget" class="widget-container">
     <h2 class="widget-title">
-    <a href=https://therisingstarr.super.site/services onclick="saveDataAndOpen">My Widget</a>
+    <a href=https://therisingstarr.super.site/services target="_top">My Widget</a>
     </h2>
     <button id="actionButton" class="widget-button">Click Me</button>
     <p id="message" class="widget-message"></p>
   </div>
-  <script 
-
-  src="script.js">
-
-    function saveDataAndOpen() {
-    // Save data to Local Storage
-    localStorage.setItem('myData', 'This is some saved data.');
-
-    // Optionally, open the new link in a new tab
-    window.open("https://therisingstarr.super.site/services", "_top");
-    
-    // Close the current window/tab (if you want)
-    window.close();
-    }
-  </script>
-  
+  <script src="script.js"></script>
 </body>
 
 </html> 
