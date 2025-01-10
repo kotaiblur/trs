@@ -47,6 +47,10 @@ body {
     font-size: 1em;
   }
 
+  a:link {
+    color: red
+  }
+
   a:hover {
-    color:green
+    color:rgb(54, 19, 19)
   }
