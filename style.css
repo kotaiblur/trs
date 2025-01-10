@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
   
   .widget-container {
     background-color: #ffffff00;
-    border: 1px solid #930000;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
