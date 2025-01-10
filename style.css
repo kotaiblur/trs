@@ -21,9 +21,10 @@ body {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #ff0000;
+    transition: color 0.3s ease;
   }
   .widget-title:hover {
-   color: #210d0d;
+    color: rgb(31, 7, 7);
 
   }
   
