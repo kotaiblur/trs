@@ -16,26 +16,21 @@ function openWithBackHistory(targetUrl, historyUrls) {
     } else {
         alert("Popup blocked! Please allow popups for this site.");
     }
-} 
+}
 
 // Add event listener for link clicks
 document.addEventListener('DOMContentLoaded', () => {
-    // Array to store clicked URLs
-    const clickedUrls = [];
-
     // Capture all link clicks
     document.body.addEventListener('click', (event) => {
         if (event.target.tagName === 'A') {
             event.preventDefault(); // Prevent default navigation
 
-            const clickedUrl = event.target.href;
-            clickedUrls.push(clickedUrl); // Add the clicked URL to the array
-
-            // Display the clicked URLs for debugging
-            console.log("Clicked URLs:", clickedUrls);
+            const currentPageUrl = window.location.href; // Current page URL
+            const clickedUrl = event.target.href; // Clicked link URL
+            const historyUrls = [currentPageUrl]; // Array to store history URLs
 
             // Open the link in a new tab with dynamic history
-            openWithBackHistory(clickedUrl, clickedUrls);
+            openWithBackHistory(clickedUrl, historyUrls);
         }
     });
 });
