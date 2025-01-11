@@ -16,7 +16,7 @@ function openWithBackHistory(targetUrl, historyUrls) {
     } else {
         alert("Popup blocked! Please allow popups for this site.");
     }
-}
+} 
 
 // Add event listener for link clicks
 document.addEventListener('DOMContentLoaded', () => {
