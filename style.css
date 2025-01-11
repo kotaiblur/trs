@@ -26,7 +26,7 @@ body {
     color: rgb(31, 7, 7);
 
   }
-  
+
   .widget-message {
     margin-top: 20px;
     color: #555555;
@@ -34,7 +34,7 @@ body {
   }
 
   a:link {
-    color: red
+    color:red
   }
 
   a:hover {
