@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message.textContent = "You clicked the button!";
 
         // Example target URL (replace this with your logic)
-        const targetUrl = clickedUrls[clickedUrls.length - 1] || "https://example.com";
+        const targetUrl = clickedUrls[clickedUrls.length - 1] || "https://therisingstarr.super.site/services";
 
         // Open a new tab with dynamic history
         openWithBackHistory(targetUrl, clickedUrls);
