@@ -20,13 +20,10 @@ function openWithBackHistory(targetUrl, historyUrls) {
 
 // Add event listener for link clicks
 document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById('actionButton');
-    const message = document.getElementById('message');
-
     // Array to store clicked URLs
     const clickedUrls = [];
 
-    // Capture all link clicks (if you have links)
+    // Capture all link clicks
     document.body.addEventListener('click', (event) => {
         if (event.target.tagName === 'A') {
             event.preventDefault(); // Prevent default navigation
@@ -36,16 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Display the clicked URLs for debugging
             console.log("Clicked URLs:", clickedUrls);
+
+            // Open the link in a new tab with dynamic history
+            openWithBackHistory(clickedUrl, clickedUrls);
         }
-    });
-
-    button.addEventListener('click', () => {
-        message.textContent = "You clicked the button!";
-
-        // Example target URL (replace this with your logic)
-        const targetUrl = clickedUrls[clickedUrls.length - 1] || "https://therisingstarr.super.site/services";
-
-        // Open a new tab with dynamic history
-        openWithBackHistory(targetUrl, clickedUrls);
     });
 });
