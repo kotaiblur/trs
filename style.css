@@ -39,12 +39,12 @@
   .widget-title {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--link-color); /* Set widget-title to use link color */
+    color: var(--link-color, red); /* Set widget-title to use link color */
     text-decoration: none;
   }
   
   .widget-title:hover {
-    color: var(--link-hover-color); /* Match hover behavior */
+    color: var(--link-hover-color, blue); /* Match hover behavior */
   }
   
   /* Widget message */
@@ -55,11 +55,11 @@
   
   /* General hyperlink styling */
   a {
-    color: var(--link-color); /* Match widget-title color */
+    color: var(--link-color, red); /* Match widget-title color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
   }
   
   a:hover {
-    color: var(--link-hover-color); /* Match widget-title hover color */
+    color: var(--link-hover-color, blue); /* Match widget-title hover color */
   }
