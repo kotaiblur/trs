@@ -35,16 +35,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .widget-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #ff0000;
-  }
-  
-  .widget-title:hover {
-    color: rgb(31, 7, 7);
-  }
-  
+ 
   .widget-message {
     margin-top: 20px;
     font-size: 1em;
