@@ -11,7 +11,7 @@
     --background-color: #232026;
     --text-color: #D1D1D3;
     --link-color: blue;
-    --link-hover-color: rgb(54, 19, 19); /* Optional: Keep hover consistent */
+    --link-hover-color: rgb(255, 255, 255); /* Optional: Keep hover consistent */
   }
   
   /* General body styling */
