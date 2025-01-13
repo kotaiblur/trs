@@ -1,6 +1,24 @@
-body {
+/* Root variables for light mode (default) */
+:root.theme-light {
+    --background-color: #ffffff00;
+    --text-color: #333333;
+    --link-color: green;
+    --link-hover-color: rgb(54, 19, 19);
+  }
+  
+  /* Root variables for dark mode */
+  :root.theme-dark {
+    --background-color: #232026;
+    --text-color: #D1D1D3;
+    --link-color: blue;
+    --link-hover-color: rgb(54, 19, 19); /* Optional: Keep hover consistent */
+  }
+  
+  /* General body styling */
+  body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff00;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +27,7 @@ body {
   }
   
   .widget-container {
-    background-color: #ffffff00;
+    background-color: var(--background-color);
     border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 20px;
@@ -22,21 +40,23 @@ body {
     margin-bottom: 10px;
     color: #ff0000;
   }
+  
   .widget-title:hover {
     color: rgb(31, 7, 7);
-
   }
-
+  
   .widget-message {
     margin-top: 20px;
-    color: #555555;
     font-size: 1em;
   }
-
+  
+  /* Hyperlink styling with variables */
   a {
-    color:green
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
   }
-
+  
   a:hover {
-    color:rgb(54, 19, 19)
+    color: var(--link-hover-color);
   }
