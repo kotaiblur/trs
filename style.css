@@ -2,16 +2,16 @@
 :root.theme-light {
     --background-color: #ffffff00;
     --text-color: #333333;
-    --link-color: green;
-    --link-hover-color: rgb(54, 19, 19);
+    --link-color: #ff0000; /* Match widget-title default color */
+    --link-hover-color: rgb(31, 7, 7); /* Match widget-title hover color */
   }
   
   /* Root variables for dark mode */
   :root.theme-dark {
     --background-color: #232026;
     --text-color: #D1D1D3;
-    --link-color: blue;
-    --link-hover-color: rgb(255, 255, 255); /* Optional: Keep hover consistent */
+    --link-color: #ff0000; /* Match widget-title default color */
+    --link-hover-color: rgb(31, 7, 7); /* Match widget-title hover color */
   }
   
   /* General body styling */
@@ -35,19 +35,31 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
- 
+  /* Widget title styling */
+  .widget-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--link-color); /* Set widget-title to use link color */
+    text-decoration: none;
+  }
+  
+  .widget-title:hover {
+    color: var(--link-hover-color); /* Match hover behavior */
+  }
+  
+  /* Widget message */
   .widget-message {
     margin-top: 20px;
     font-size: 1em;
   }
   
-  /* Hyperlink styling with variables */
+  /* General hyperlink styling */
   a {
-    color: var(--link-color);
+    color: var(--link-color); /* Match widget-title color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
   }
   
   a:hover {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color); /* Match widget-title hover color */
   }
